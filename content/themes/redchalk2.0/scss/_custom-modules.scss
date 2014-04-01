@@ -1,0 +1,127 @@
+/*--------- Parallax Module ------------ */
+.static {
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding: 100px 0;
+	background-attachment: inherit;
+	background-size: inherit;
+}
+
+.parallax {
+	@extend .static;
+	background-attachment: fixed;
+	background-size: cover;
+
+	h2 {
+		color: $white;
+		text-shadow: 1px 1px 5px $text-shadow;
+		text-align:center;
+		text-transform:uppercase;
+	}
+
+	p {
+		color: $white;
+		text-shadow: 1px 1px 5px $text-shadow;
+		text-align:center;
+	}
+}
+
+/*--------- Services ----------*/
+
+.icon { 
+background:$rcs-red;
+@include border-radius(50%); 
+}
+
+
+/*----- Featured Work ------*/
+
+.portfolio-hover {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+
+
+/*--------- Google Module ------------ */
+#map-wrap {
+	width: 100%;
+	height: 250px;
+}
+
+
+/*--- Testimonials ---*/
+
+#testimonial li {
+
+	 p, h5, h6 {
+	 	color:$white;
+	 }
+}	 
+
+#prev4 {width:30px; height:64px; z-index:999; display:inline-block !important; background:$off-black url(../images/direction_nav_prev.png) no-repeat; background-size:30px 51px; padding:0;}
+#next4 {width:30px; height:64px; z-index:999; display:inline-block !important; background:$off-black url(../images/direction_nav_next.png) no-repeat; background-size:30px 51px;}
+
+/*--------- Team Slider Module ------------ */
+
+.list_carousel {
+	margin: 0 0 30px 60px;
+	width: 360px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: block;
+	
+		li {
+			text-align: center;
+			padding: 0;
+			margin: 6px;
+			display: block;
+			float: left;
+			
+			p {
+				width:50%;
+			}
+			
+			img {
+				text-align: center;
+				border-radius:50%;
+				max-width:200px;
+				margin:0;
+			}
+		}
+	}
+}
+
+.list_carousel.responsive {
+	width: auto;
+	margin-left: 0;
+	
+	p {
+		width: 204px;
+		margin: 0 auto;
+		line-height:1.2em;
+	}
+}
+
+.caroufredsel_wrapper {height:316px!important; float:left!important;}
+
+a.prev {
+	float: left;
+	padding: 0 10px;
+	top: -100px;
+	position:relative;
+}
+
+a.next {
+	
+	@extend .prev;
+	float: right;
+}
+
+#prev5 {width:30px; height:64px; z-index:999; display:inline-block !important; background:#f7f1e4 url(../images/direction_nav_prev.png) no-repeat; background-size:30px 51px; padding:0;}
+#next5 {width:30px; height:64px; z-index:999; display:inline-block !important; background:#f7f1e4 url(../images/direction_nav_next.png) no-repeat; background-size:30px 51px;}

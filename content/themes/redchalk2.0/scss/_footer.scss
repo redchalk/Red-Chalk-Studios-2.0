@@ -1,0 +1,85 @@
+#contact-us {
+	padding:20px 0;
+	border-top: 7px solid $off-black;
+
+	h2 {
+		font-size:2.5em;
+		text-transform:uppercase;
+	}
+}
+
+#footer {
+	padding:15px 0;
+	text-align:center;
+	color:$white;
+}
+
+#hiring {
+	display: block;
+	position: fixed;
+	height: 25px;
+	width: 93px;
+	bottom: 0;
+	right: 80px;
+	background: red;
+	padding: 5px 9px;
+	text-align: center;
+	color: #fff;
+	font-family:$head-font;
+	text-transform: uppercase;
+	font-size: 13px;
+	border-radius: 10px 10px 0px 0px;
+	background-color: #c1172c;
+}
+
+#go-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	text-indent: -999em;
+	color: white;
+	background-image: url(../images/back-to-top.png);
+	background-size: 50px;
+	padding: 0;
+	height: 50px;
+	width: 50px;
+	opacity: 0.7;
+	z-index: 999;
+	display: none;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	-o-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
+}
+
+.social {
+	background:url(../images/rcs-social-icons.png) no-repeat;
+	height:40px;
+	width:40px;
+	display:inline-block;
+	background-size:184px 87px;
+	margin-top:5px;
+}
+
+.facebook { background-position:0 0;
+	&:hover { background-position:0 -43px;}	
+}
+
+
+.linkedin { background-position:-46px 0;
+	&:hover {background-position:-46px -43px;}
+}
+
+.pinterest { background-position:-94px 0px;
+	&:hover {background-position:-94px -43px;}
+}	
+
+.instagram { background-position:-140px 0px;
+	&:hover {background-position:-140px -43px;}
+}
+
+#contact-information ul {list-style: none; margin:0;}
+
+#contact-address {background:url(../images/icons/pin.png) no-repeat; padding: 0 0 5px 32px; background-size:24px 24px;}
+#contact-phone {background:url(../images/icons/phone.png) no-repeat; padding: 0 0 5px 32px; background-size:24px 24px;}
+#contact-email {background:url(../images/icons/email.png) no-repeat; padding: 0 0 5px 32px; background-size:24px 24px;}

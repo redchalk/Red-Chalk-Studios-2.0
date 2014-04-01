@@ -1,0 +1,15 @@
+header {
+	position: fixed;
+	width: 100%;
+	padding: 10px 0;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index:10;
+	background:$rcs-tan;
+	border-bottom:3px solid $off-black;
+	
+	img {
+		width:75%;
+	}
+}

@@ -1,0 +1,72 @@
+/*--- Variables ---*/
+
+$rcs-red: #c1172c;
+$rcs-dkred: #9e0618;
+
+$rcs-green: #89B8AA;
+$rcs-dkgreen: #4E7C6E;
+
+$rcs-tan:#f7f1e4;
+
+$off-black: #1d1c1c;
+$text-shadow: #666666;
+
+$white:#fff;
+
+$head-font:  "omnes-pro",sans-serif;
+$body-font: "Open Sans", Arial, Helvetica, Verdana, sans-serif;
+
+/*-- Global --*/
+
+body {
+	background:$rcs-tan;
+	font-size:16px;
+	font-family:$body-font;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family:$head-font;}
+
+h1 {font-size:2em;}
+h2 {font-size:1.8em;}
+h3 {font-size:1.6em;}
+h4 {font-size:1.4em;}
+h5 {font-size:1.2em;}
+h6 {font-size:1em;}
+
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+/*--- Layout ---*/
+
+.full-width {
+	width:100%;
+}
+
+.alignleft {
+	float:left;
+}
+
+.module {
+	h1, h2, h3, h4, h5, h6, p {text-align:center;}
+}
+
+.button {
+	background:$rcs-red;
+	border-bottom:7px solid $rcs-dkred;
+	display:block;
+	width:100%;
+	text-align:center;
+	color:$white;
+	font-family:$head-font;
+	text-transform:uppercase;
+	padding:15px 0;
+	@include border-radius(10px);
+
+	&:hover {
+
+		background:$rcs-green;
+		border-bottom:7px solid $rcs-dkgreen;
+	}
+}
