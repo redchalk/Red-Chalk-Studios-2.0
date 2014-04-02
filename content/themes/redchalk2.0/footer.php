@@ -15,15 +15,17 @@
 	
 	<div class="full-width" style="background:<?php the_field('info_bg_color','option'); ?> url(<?php the_field('info_bg_image','option'); ?>) repeat">
 		<div class="row">
-			<div class="small-7 small-centered large-1 large-uncentered columns">
-				<a class="social facebook" href="<?php the_field('facebook','option'); ?>" title="Like Red Chalk Studios on Facebook" target="_blank"></a>
-				<a class="social linkedin" href="<?php the_field('linkedin','option'); ?>" title="Connect with Red Chalk Studios on Linkedin" target="_blank"></a>
-				<a class="social pinterest" href="<?php the_field('pinterest','option'); ?>" title="Follow Red Chalk Studios on Pinterest" target="_blank"></a>
-				<a class="social instagram" href="<?php the_field('instagram','option'); ?>" title="Follow Red Chalk Studios on Instagram" target="_blank"></a>	
+			<div class="small-7 small-centered large-2 large-uncentered columns">
+				<div id="social-wrapper">
+					<a class="social facebook" href="<?php the_field('facebook','option'); ?>" title="Like Red Chalk Studios on Facebook" target="_blank"></a>
+					<a class="social linkedin" href="<?php the_field('linkedin','option'); ?>" title="Connect with Red Chalk Studios on Linkedin" target="_blank"></a>
+					<a class="social pinterest" href="<?php the_field('pinterest','option'); ?>" title="Follow Red Chalk Studios on Pinterest" target="_blank"></a>
+					<a class="social instagram" href="<?php the_field('instagram','option'); ?>" title="Follow Red Chalk Studios on Instagram" target="_blank"></a>
+				</div>		
 			</div>
 			
-			<div class="small-12 large-4 columns">
-				<ul>
+			<div class="small-12 large-3 columns">
+				<ul id="contact-info">
 				    <li id="contact-address"><?php the_field('address','option'); ?></li>
 					<li id="contact-phone"><?php the_field('phone','option'); ?></li>
 					<li id="contact-email"><a href="mailto:<?php the_field('contact_email','option'); ?>"><?php the_field('contact_email','option'); ?></a></li>
@@ -38,7 +40,7 @@
 	</div>	
 	
 	<?php if(get_field('display_hiring_tab','option')): ?>
-		<a id="hiring" href="" title="Red Chalk Studios is hiring"><?php the_field('hiring_tab_text','option'); ?></a>
+		<a id="hiring" href="<?php the_field('job_description_link', 'option'); ?>" title="Red Chalk Studios is hiring"><?php the_field('hiring_tab_text','option'); ?></a>
 	<?php endif; ?>
 	
 	<a id="go-to-top" href="#" title="Back to top" style="display: inline;">Scroll To Top</a>

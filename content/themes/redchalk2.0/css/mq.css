@@ -208,6 +208,8 @@ select {
 .columns {
   padding-left: 0.9375em;
   padding-right: 0.9375em;
+  padding-top: 0.9375em;
+  padding-bottom: 0.9375em;
   width: 100%;
   float: left; }
 
@@ -1177,8 +1179,28 @@ a {
 .alignleft {
   float: left; }
 
-.module h1, .module h2, .module h3, .module h4, .module h5, .module h6, .module p {
-  text-align: center; }
+.module {
+  padding: 40px 0; }
+  .module h1, .module h2, .module h3, .module h4, .module h5, .module h6, .module p {
+    text-align: center; }
+  @media (min-width: 61) {
+    .module {
+      padding: 100px 0; } }
+  .module h2 {
+    color: #c1172c;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center; }
+    @media (min-width: 61em) {
+      .module h2 {
+        font-size: 5em; } }
+  .module p {
+    text-align: center; }
+  .module .module-link {
+    color: #89b8aa;
+    font-size: 1.6em;
+    font-family: "omnes-pro", sans-serif;
+    text-transform: uppercase; }
 
 .button {
   background: #c1172c;
@@ -1211,6 +1233,23 @@ header {
   header img {
     width: 75%; }
 
+.introduction {
+  padding: 150px 0; }
+  .introduction h2 {
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center; }
+    @media (min-width: 61em) {
+      .introduction h2 {
+        font-size: 5em; } }
+  .introduction p {
+    margin-top: 10px;
+    border-top: 3px solid #c1172c;
+    padding: 20px 0;
+    color: white;
+    text-align: center; }
+
 /*--------- Parallax Module ------------ */
 .static, .parallax {
   width: 100%;
@@ -1227,11 +1266,13 @@ header {
     color: white;
     text-shadow: 1px 1px 5px #666666;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding: 10px 0; }
   .parallax p {
     color: white;
     text-shadow: 1px 1px 5px #666666;
-    text-align: center; }
+    text-align: center;
+    padding: 10px 0; }
 
 /*--------- Services ----------*/
 .icon {
@@ -1242,15 +1283,51 @@ header {
   border-radius: 50%; }
 
 /*----- Featured Work ------*/
+.portfolio-thumb {
+  position: relative; }
+  .portfolio-thumb a {
+    display: none; }
+    @media (min-width: 61em) {
+      .portfolio-thumb a {
+        -webkit-transition: all 0.2s ease-out 0.1s;
+        -moz-transition: all 0.2s ease-out 0.1s;
+        -o-transition: all 0.2s ease-out 0.1s;
+        transition: all 0.2s ease-out 0.1s;
+        opacity: 0;
+        display: inline;
+        text-align: center;
+        line-height: 1.2em; }
+        .portfolio-thumb a:hover {
+          opacity: 1;
+          color: white;
+          padding: 80px 20px; } }
+
 .portfolio-hover {
   position: absolute;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease-out 0.1s;
+  -moz-transition: all 0.2s ease-out 0.1s;
+  -o-transition: all 0.2s ease-out 0.1s;
+  transition: all 0.2s ease-out 0.1s; }
+  .portfolio-hover:hover {
+    background: rgba(137, 184, 170, 0.8); }
 
 /*--------- Google Module ------------ */
 #map-wrap {
   width: 100%;
   height: 250px; }
+
+/*------- Featured Works -------*/
+.portfolio-thumb img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }
 
 /*--- Testimonials ---*/
 #testimonial li p, #testimonial li h5, #testimonial li h6 {
@@ -1349,19 +1426,25 @@ a.next {
 #hiring {
   display: block;
   position: fixed;
-  height: 25px;
-  width: 93px;
+  height: 30px;
+  width: 140px;
   bottom: 0;
   right: 80px;
-  background: red;
-  padding: 5px 9px;
+  padding: 7px 9px;
   text-align: center;
   color: #fff;
   font-family: "omnes-pro", sans-serif;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 15px;
   border-radius: 10px 10px 0px 0px;
-  background-color: #c1172c; }
+  background-color: #c1172c;
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s; }
+  #hiring:hover {
+    background-color: #89b8aa;
+    height: 45px; }
 
 #go-to-top {
   position: fixed;
@@ -1410,21 +1493,18 @@ a.next {
   .instagram:hover {
     background-position: -140px -43px; }
 
-#contact-information ul {
+#contact-info {
   list-style: none;
   margin: 0; }
+  #contact-info li {
+    padding: 0 0 5px 32px;
+    background-size: 24px 24px; }
 
 #contact-address {
-  background: url(../images/icons/pin.png) no-repeat;
-  padding: 0 0 5px 32px;
-  background-size: 24px 24px; }
+  background: url(../images/icons/pin.png) no-repeat; }
 
 #contact-phone {
-  background: url(../images/icons/phone.png) no-repeat;
-  padding: 0 0 5px 32px;
-  background-size: 24px 24px; }
+  background: url(../images/icons/phone.png) no-repeat; }
 
 #contact-email {
-  background: url(../images/icons/email.png) no-repeat;
-  padding: 0 0 5px 32px;
-  background-size: 24px 24px; }
+  background: url(../images/icons/email.png) no-repeat; }

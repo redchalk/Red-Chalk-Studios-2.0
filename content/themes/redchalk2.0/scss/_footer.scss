@@ -17,19 +17,26 @@
 #hiring {
 	display: block;
 	position: fixed;
-	height: 25px;
-	width: 93px;
+	height: 30px;
+	width: 140px;
 	bottom: 0;
 	right: 80px;
-	background: red;
-	padding: 5px 9px;
+	padding: 7px 9px;
 	text-align: center;
 	color: #fff;
-	font-family:$head-font;
+	font-family: $head-font;
 	text-transform: uppercase;
-	font-size: 13px;
+	font-size: 15px;
 	border-radius: 10px 10px 0px 0px;
-	background-color: #c1172c;
+	background-color:$rcs-red;
+	@include fade(0.2s, 0s);
+	
+	
+	&:hover {
+		background-color:$rcs-green;
+		height:45px;
+	}
+	
 }
 
 #go-to-top {
@@ -78,8 +85,16 @@
 	&:hover {background-position:-140px -43px;}
 }
 
-#contact-information ul {list-style: none; margin:0;}
+#contact-info {
+	list-style: none; 
+	margin:0;
+	
+	li {
+		padding: 0 0 5px 32px; 
+		background-size:24px 24px;
+	}
+}
 
-#contact-address {background:url(../images/icons/pin.png) no-repeat; padding: 0 0 5px 32px; background-size:24px 24px;}
-#contact-phone {background:url(../images/icons/phone.png) no-repeat; padding: 0 0 5px 32px; background-size:24px 24px;}
-#contact-email {background:url(../images/icons/email.png) no-repeat; padding: 0 0 5px 32px; background-size:24px 24px;}
+#contact-address {background:url(../images/icons/pin.png) no-repeat;}
+#contact-phone {background:url(../images/icons/phone.png) no-repeat;}
+#contact-email {background:url(../images/icons/email.png) no-repeat;}

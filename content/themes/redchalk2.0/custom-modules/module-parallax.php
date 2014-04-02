@@ -12,7 +12,7 @@
 	style="background-image:url(<?php the_sub_field('background_image') ?>);">
 	
 	<div class="row">
-		<div class="small-11 small-centered">
+		<div class="small-12 small-centered">
 			<h2><?php the_sub_field('parallax_headline'); ?></h2>
 			<p><?php the_sub_field('parallax_text'); ?></p>	
 		</div>

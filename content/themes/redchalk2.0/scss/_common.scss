@@ -50,6 +50,39 @@ a {
 
 .module {
 	h1, h2, h3, h4, h5, h6, p {text-align:center;}
+	
+	padding:40px 0;
+	
+	@include sb-media(61) {
+	
+		padding:100px 0;
+			
+	}	
+	
+	h2 {
+		color:$rcs-red; 
+		font-size:3em;
+		text-transform: uppercase;
+		text-align: center;
+		
+		@include sb-media(61em) {
+			font-size: 5em;	
+		}
+		
+	}
+	
+	p {
+		text-align: center;
+	}
+	
+	.module-link {
+		color:$rcs-green;
+		font-size:1.6em;
+		font-family: $head-font;
+		text-transform: uppercase;		
+	}
+	
+	
 }
 
 .button {

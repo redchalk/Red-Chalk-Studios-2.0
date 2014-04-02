@@ -13,3 +13,30 @@ header {
 		width:75%;
 	}
 }
+
+.introduction {
+	
+	padding:150px 0;
+	
+	h2 {
+		color:$white;
+		font-size:2em;
+		text-transform: uppercase;
+		text-align:center;
+		
+		@include sb-media(61em) {
+		
+			font-size:5em;	
+		
+		}	
+		
+	}
+	
+	p {
+		margin-top:10px;
+		border-top:3px solid $rcs-red;
+		padding:20px 0;
+		color:white;
+		text-align: center;	
+	}	
+}

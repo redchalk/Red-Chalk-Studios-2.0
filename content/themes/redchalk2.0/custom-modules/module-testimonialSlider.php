@@ -1,7 +1,7 @@
 <!-- Testimonials Section -->
 
 <div class="full-width" style="background-color:#<?php the_sub_field('bg_color'); ?>;">
-	<div class="row"
+	<div class="row">
 			
 		<div class="small-12 large-12 columns">
 				

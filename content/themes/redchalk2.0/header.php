@@ -20,7 +20,7 @@
 	<?php } ?>
 	
 	<title>
-    <?php if(is_page('Home Page')) {
+    <?php if(is_page('Homepage')) {
     		bloginfo('description'); echo ' | '; bloginfo('name'); echo ' | Creative Agency Virginia Beach, VA';
 		  } else {    
 			wp_title('|', true, 'right'); echo ' | '; bloginfo('description'); echo ' | Creative Agency Virginia Beach, VA';
@@ -59,10 +59,10 @@
 	
 	<header>
 		<div class="row">
-			<div class="small-7 medium-4 large-3 columns">
+			<div class="small-7 medium-4 large-3 columns end">
 				<a href="<?php echo site_url(); ?>" title="<?php echo bloginfo('name'); ?>"><img src="<?php the_field('site_logo','option') ?>" /></a>
 			</div>
-			<div class="small-1 large-2 columns">
+			<div class="small-1 medium-4 large-2 columns end">
 				<a title="Access the navigation menu" class="menu-toggle">TOGGLE</a>
 			</div>
 		</div>				

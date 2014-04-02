@@ -32,8 +32,15 @@ $base-font-multiplier: 1 !default;
 }
 
 @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+ -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+     -ms-border-radius: $radius;
+         border-radius: $radius;
+}
+
+@mixin fade($time, $delay) {
+ -webkit-transition: all $time ease-out $delay;
+    -moz-transition: all $time ease-out $delay;
+      -o-transition: all $time ease-out $delay;
+         transition: all $time ease-out $delay;	
 }
